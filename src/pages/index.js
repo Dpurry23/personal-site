@@ -1,20 +1,57 @@
 import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+import Particles from "react-particles-js"
+import config from "../../particlesjs-config"
+
+const Header = styled.div`
+  background: #1e1e1e;
+  height: 100vh;
+`
+
+const Title = styled.span`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #05e888;
+  font-family: Orbitron, sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+
+  @media (max-width: 870px) {
+    font-size: 1.5em;
+  }
+`
+const SubText = styled.span`
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+  font-family: Roboto,sans-serif;
+  font-size: 1em;
+  letter-spacing:  0.2em;
+  @media (max-width: 870px) {
+  font-size: 0.7em;
+  }
+`
+const StyledParticles = styled(Particles)`
+  height: 100%;
+`
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Header>
+      <Title>I AM DARIAN PURRY.</Title>
+      <SubText>Under Construction...</SubText>
+      <StyledParticles params={config}/>
+    </Header>
   </Layout>
 )
 
