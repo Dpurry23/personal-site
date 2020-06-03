@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7,6 +9,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #1e1e1e;
 }
 article,
 aside,
@@ -50,12 +53,10 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
 }
 b,
 strong {
   font-weight: inherit;
-  font-weight: bolder;
 }
 dfn {
   font-style: italic;

@@ -7,20 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
+import Particles from "react-particles-js"
+import config from "../../particlesjs-config"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-      query SiteTitleQuery {
-          site {
-              siteMetadata {
-                  title
-              }
-          }
-      }
-  `)
 
   return (
     <>
@@ -28,8 +20,19 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           paddingTop: 0,
+          fontFamily: "Orbitron",
         }}
       >
+        <Particles
+          style={{
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            top: 0,
+            zIndex: -1,
+          }}
+          params={config}
+          />
         <main>{children}</main>
       </div>
     </>
