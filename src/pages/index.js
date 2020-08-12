@@ -62,9 +62,9 @@ const IndexPage = () => (
     <Header>
       <Title>DARIAN PURRY</Title>
       <Socials>
-        <Social link="https://www.twitter.com/darianjss/" icon="twitter" />
+        <Social link="https://www.twitter.com/jpegpinkk/" icon="twitter" />
         <Social link="https://www.instagram.com/nairadjs/" icon="instagram" />
-        <Social link="https://www.twitch.tv/darianjs/" icon="twitch" />
+        <Social link="https://www.twitch.tv/jpegpink/" icon="twitch" />
         <Social link="https://www.github.com/dpurry23/" icon="github" />
       </Socials>
       <Email>dpurry23@gmail.com</Email>

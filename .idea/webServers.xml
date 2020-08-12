@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d3e8d8c4-8d7c-445e-9b30-b08ee719bd1b" name="portfolio" url="http://darianpurry.dev">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="138.68.53.167" port="22" sshConfigId="f171cab3-7531-4bf4-a3f0-475bd53196bb" sshConfig="root@138.68.53.167:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
