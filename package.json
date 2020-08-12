@@ -39,7 +39,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy-production": "gatsby build && scp -r html/* root@132.68.53.167:/var/www/darianpurry.dev/"
+    "deploy-production": "gatsby build && scp -r public/* root@132.68.53.167:/var/www/darianpurry.dev/"
   },
   "repository": {
     "type": "git",
